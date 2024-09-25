@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: "Jura", sans-serif;
+    background-color: #12141b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.user {
+    position: relative;
+    background-color: #1a1c23;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 332px;
+    height: 196px;
+    text-align: center;
+    padding: 20px;
+
+    &:hover {
+        border: 1px solid #cf7b5a;
+    }
+    
+    &:hover h2 {
+        color: #cf7b5a;
+    }
+
+    & a {
+        display: none;
+        position: absolute;
+        top: -2px;
+        right: -2px;
+        border-radius: 0 16px 0 16px;
+        border-left: 1px solid #ff2c47;
+        border-bottom: 1px solid #ff2c47;
+        padding: 10px;
+    
+    }
+
+    &:hover a {
+        display: block;
+    }
+    
+    &__title {
+        display: flex;
+        gap: 16px;
+    }
+    
+    
+    &__avatar img {
+        width: 56px;
+        height: 56px;;
+        border-radius: 40px;
+    }
+
+    &__main {
+        text-align: left;
+    }
+    
+    &__name {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24px;
+        text-align: left;
+        margin-bottom: 0.5rem;
+        color: #dcd8d3;
+    }
+    
+    &__delete-button {
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    &__info {
+        padding: 4px 0px 16px 0px;
+    }
+    
+    &__info-row {
+        display: flex;
+        gap: 16px;
+    }
+    
+    &__phone,
+    &__birthday,
+    &__address {
+        color: #8c8988;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 20px;
+        text-align: left;
+        width: 56px;
+        padding-top: 12px;
+    }
+
+    &__email,
+    &__phone-text,
+    &__birthday-text,
+    &__address-text {
+        color: #dcd8d3;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        text-align: left;
+        padding-top: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
