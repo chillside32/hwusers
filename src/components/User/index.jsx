@@ -2,8 +2,7 @@ import "./User.scss";
 import deleteButton from "../../images/deleteButton.svg";
 
 const User = (props) => {
-  const { onDelete, user } = props;
-  const { name, email, phone, picture, dobdate, location } = user;
+  const { name, email, phone, picture, dobdate, location, onDelete } = props;
 
   const handleDelete = (e) => {
     e.preventDefault();

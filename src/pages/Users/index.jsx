@@ -61,7 +61,16 @@ const Users = () => {
       <div className="container">
         <div className="list__users">
           {filteredUsers.map((user, index) => (
-            <User key={index} user={user} onDelete={handleDeleteUser} />
+            <User
+              key={index}
+              name={`${user.name.first} ${user.name.last}`}
+              email={user.email}
+              phone={user.phone}
+              picture={user.picture.medium}
+              dobdate={new Date(user.dob.date).toLocaleDateString()}
+              location={`${user.location.city}, ${user.location.country}`}
+              onDelete={handleDeleteUser}
+            />
           ))}
         </div>
         <div className="list"></div>
